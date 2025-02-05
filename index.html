@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Meerab</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!-- Floating Hearts -->
+<div id="hearts-container">
+    <span class="heart">❤️</span>
+    <span class="heart">💖</span>
+    <span class="heart">💘</span>
+    <span class="heart">💕</span>
+    <span class="heart">💗</span>
+    <span class="heart">💞</span>
+    <span class="heart">❣️</span>
+</div>
+<!-- Background Music -->
+<audio autoplay loop preload="auto">
+    <source src="music/bg-music.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+  
+    <div class="container">
+        <h1>Happy Valentine's Day Meerab ❤️</h1>
+        <div class="subtext">I love you my princess!</div>
+
+        <div class="gallery">
+            <div class="polaroid">
+                <img src="images/photo1.jpg" alt="Us Together">
+                <p>First restaurant date</p>
+            </div>
+            <div class="polaroid">
+                <img src="images/photo2.jpeg" alt="Laughing together">
+                <p>Matching Bracelets</p>
+            </div>
+            <div class="polaroid">
+                <img src="images/photo3.jpeg" alt="Sunset moment">
+                <p>My favorite pillow</p>
+            </div>
+            <div class="polaroid">
+                <img src="images/photo4.jpg" alt="Cute dress">
+                <p>Cutest dress</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- The Kiss Button -->
+        <button id="kiss-btn" class="kiss-btn" onclick="showKissMessage()">
+            <span class="lips">&#x1F48B;</span> <!-- Female lips emoji -->
+        </button>
+
+        <!-- Button to show the love letter -->
+        <button id="show-letter-btn" onclick="showLoveLetter()">Click me for a surprise</button>
+
+        <!-- The Love Letter Popup -->
+        <div id="love-letter" class="love-letter">
+            <div class="letter-content">
+                <h2>My Meeru,</h2>
+            <p>
+                I've been falling for you more and more since the day that I met you. You've taught me how to experience love again. I cherish every moment that I spend with youu and spend the other waking moments thinking about you. I don't know what kind of spell you've put on me or what trance youu've put me into but nothing beats this feeling of being loved by you. You are my safe space and I feel very comfortable around you. Thank you for being you Meerab 
+            </p>
+            <p>
+                My heart belongs to you, <br> 
+                Your Chipku Ans ❤️
+            </p>
+                <button onclick="closeLoveLetter()">Close</button>
+            </div>
+        </div>
+
+        <!-- Hidden Kiss Message -->
+        <div id="kiss-message" class="message">
+            Yayy, you get a kiss! &#x1F618; <!-- Kiss emoji -->
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
